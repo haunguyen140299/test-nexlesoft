@@ -1,0 +1,33 @@
+.FormPage {
+	background: #fff;
+	min-height: 100vh;
+	&__image {
+		background: #f8f8f8;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		padding: 15px;
+		img {
+			max-height: 150px;
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+			@media screen and (min-width: 768px) {
+				max-height: 576px;
+			}
+		}
+		@media screen and (min-width: 768px) {
+			min-height: 100vh;
+		}
+	}
+	&__form {
+		background: #ffffff;
+		padding: 20px 16px 52px;
+		@media screen and (min-width: 768px) {
+			padding: 30px 71px;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+		}
+	}
+}

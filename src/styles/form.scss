@@ -1,0 +1,88 @@
+.Form {
+	&__title {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		color: #5e5873;
+		margin-bottom: 8px;
+	}
+	&__description {
+		margin-bottom: 23px;
+	}
+	&__label {
+		font-size: 12px;
+		line-height: 18px;
+		margin-bottom: 2px;
+		&::after {
+			content: "*";
+			color: #ea5455;
+		}
+	}
+	&__input {
+		border-radius: 5px;
+		background: #ffffff;
+		height: 38px;
+		font-size: 12px;
+		line-height: 24px;
+		padding: 8px 15px;
+		color: #141414;
+		&::placeholder {
+			color: #b9b9c3;
+		}
+		&::-webkit-input-placeholder {
+			/* Edge */
+			color: #b9b9c3;
+		}
+		&:-ms-input-placeholder {
+			/* Internet Explorer 10-11 */
+			color: #b9b9c3;
+		}
+	}
+	&__check {
+		margin-bottom: 14px;
+	}
+	&__button {
+		background: #7367f0;
+		border-radius: 5px;
+		width: 100%;
+		height: 38px;
+		margin-bottom: 14px;
+	}
+	&__question {
+		margin-left: 10px;
+	}
+	&__redirect {
+		margin-left: 10px;
+	}
+	&__or {
+		text-align: center;
+		position: relative;
+		margin-bottom: 16px;
+		&::before {
+			content: "";
+			background: #e9eaec;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+		span {
+			background: #ffffff;
+			padding: 0 10px;
+			position: relative;
+			z-index: 1;
+		}
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		gap: 11px;
+	}
+	&__forgot_password {
+		font-size: 12px;
+		line-height: 18px;
+		float: right;
+	}
+}

@@ -1,0 +1,65 @@
+.Account {
+	position: relative;
+	&__wrapper {
+		display: flex;
+		gap: 14px;
+		cursor: pointer;
+		user-select: none;
+	}
+	&__content {
+		text-align: right;
+	}
+	&__icon {
+		display: flex;
+		align-items: flex-end;
+		width: 38px;
+		height: 38px;
+		background: #7367f0;
+		border-radius: 100%;
+		position: relative;
+		img {
+			width: 100%;
+			height: 90%;
+			object-fit: contain;
+			border-radius: 100%;
+		}
+	}
+	&__dot {
+		width: 11px;
+		height: 11px;
+		background: #28c76f;
+		border: 2px solid #ffffff;
+		border-radius: 100%;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		z-index: 5;
+	}
+	&__name {
+		color: #6e6b7b;
+	}
+	&__status {
+		font-size: 12px;
+		line-height: 16px;
+		color: #b9b9c3;
+	}
+	&__logout {
+		position: absolute;
+		background: #ffffff;
+		border: 1px solid #e9eaeb;
+		border-radius: 4px;
+		text-align: right;
+		padding: 8px 10px;
+		color: #6e6b7b;
+		min-width: 150px;
+		right: 0px;
+		top: 100%;
+		margin-top: 10px;
+		cursor: pointer;
+		user-select: none;
+		img {
+			margin-left: 11px;
+			margin-top: -2px;
+		}
+	}
+}
